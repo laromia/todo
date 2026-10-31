@@ -1,0 +1,272 @@
+
+.sidebar {
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 50px;
+  padding-left: 8px;
+}
+
+.brand-icon { font-size: 1.8rem; }
+
+.brand h2 {
+  margin: 0;
+  color: #805568;
+  font-size: 1.6rem;
+}
+
+.menu-label {
+  margin: 0 0 15px 10px;
+  color: #b18b9b;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.filter-label { margin-top: 35px; }
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 13px 12px;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: #795d6b;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-item:hover { background: #fff5f8; }
+
+.nav-item.active {
+  background: white;
+  color: #c16f8d;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgb(190 120 150 / 10%);
+}
+
+.task-count {
+  margin-left: auto;
+  color: #b18b9b;
+  font-size: 0.8rem;
+}
+
+.sidebar-note {
+  margin-top: auto;
+  padding: 20px 16px;
+  border-radius: 16px;
+  background: #f8dce8;
+  color: #896477;
+  text-align: center;
+}
+
+.note-icon { font-size: 1.8rem; }
+
+.sidebar-note p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.note-decoration {
+  color: #d58da9;
+  font-size: 1.4rem;
+}
+
+.sidebar-footer {
+  margin-top: 25px;
+  color: #b18b9b;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.sidebar-footer span { color: #d987a1; }
+
+@media (max-width: 650px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .brand { margin-bottom: 15px; }
+  .sidebar-note, .sidebar-footer { display: none; }
+
+  .navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .nav-item { width: auto; }
+}
+/* COSMIC SIDEBAR THEME */
+
+.sidebar {
+  background: var(--bg-sidebar);
+  border-right: 1px solid #D1C4E0;
+}
+
+.brand h2 {
+  color: var(--purple-deep);
+}
+
+.brand-icon {
+  filter: saturate(0.7);
+}
+
+.menu-label,
+.sidebar-footer {
+  color: var(--text-muted);
+}
+
+.nav-item {
+  color: var(--purple-dark);
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.nav-item.active {
+  background: var(--bg-card);
+  color: var(--purple-dark);
+  box-shadow: var(--shadow-soft);
+}
+
+.task-count {
+  color: var(--text-muted);
+}
+
+.sidebar-note {
+  background: #CFC2E0;
+  color: var(--purple-dark);
+}
+
+.note-decoration {
+  color: var(--pink);
+}
+.focus-timer {
+  margin: 25px 12px;
+  padding: 20px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  background: linear-gradient(145deg, #eee7f6, #f6eaf2);
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.timer-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--purple-dark);
+}
+
+.timer-heading h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.timer-heading span {
+  color: var(--pink);
+}
+
+.timer-mode {
+  margin: 18px 0 12px;
+  color: var(--purple-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.timer-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 145px;
+  margin: 0 auto;
+  border: 5px solid #d8c9e8;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.timer-time {
+  color: var(--purple-deep);
+  font-size: 2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-circle span {
+  margin-top: 5px;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
+
+.timer-progress {
+  height: 6px;
+  margin: 18px 0 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ded4e9;
+}
+
+.timer-progress div {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #a995c9, #c99ab8);
+  transition: width 0.5s ease;
+}
+
+.timer-suggestion {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.timer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.timer-buttons button {
+  padding: 9px 22px;
+  border: none;
+  border-radius: 10px;
+  background: var(--purple);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.timer-buttons button:hover {
+  background: var(--purple-dark);
+}
+
+.timer-buttons .reset-button {
+  padding: 9px 13px;
+  background: #e7d9e9;
+  color: var(--purple-dark);
+}

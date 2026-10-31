@@ -1,0 +1,28 @@
+:root {
+  /* Main backgrounds */
+  --bg-main: #F1EDF7;
+  --bg-sidebar: #DCD2E9;
+  --bg-card: #FBF9FE;
+
+  /* Cosmic palette */
+  --purple: #A995C9;
+  --purple-dark: #51445F;
+  --purple-deep: #352C46;
+
+  --pink: #C99AB8;
+  --pink-light: #E7D1DF;
+  --pink-soft: #F3E7EF;
+
+  /* Supporting colors */
+  --lavender: #EAE3F3;
+  --blue-soft: #DDE3F0;
+  --text-main: #51445F;
+  --text-muted: #92869F;
+
+  /* Effects */
+  --shadow-soft: 0 8px 25px rgba(65, 49, 83, 0.08);
+  --shadow-hover: 0 12px 30px rgba(65, 49, 83, 0.13);
+
+  --radius-card: 20px;
+  --radius-button: 12px;
+}
