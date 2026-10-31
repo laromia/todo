@@ -138,12 +138,4 @@ TaskFlow features a soft lavender and pink color palette, rounded cards, and a m
 
 ---
 
-## 👩‍💻 Author
-
-**Aicha Ferouat**
-
-GitHub: [@laromia](https://github.com/laromia)
-
----
-
 *Built with Vue 3, TypeScript, and a little bit of 🌸.*
